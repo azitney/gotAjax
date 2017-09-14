@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Game of Thrones</title>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script './script.js'></script>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game of Thrones</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src='./script.js'></script>
+  <style media="screen">
+    * {
+      font-family: 'Cinzel', serif;
+    }
+
+    body {
+      background: url('http://wlpgot.com/images/wall-game-of-thrones-32.jpg') center;
+      background-size: cover;
+      width: 100%;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    header h1 {
+      font-weight: bold;
+    }
+
+    .char-content {
+      height: 300px;
+    }
+
+    .house-content {
+      height: 200px;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+    .middle-container{
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 class='center-align'>Game of Thrones</h1>
+  </header>
+
+  <div class="container search">
+    <h2 class='center-align'>characters</h2>
+    <h5 class='center-align'>Search Character By ID Number:</h5>
+    <input type="text" id="inputChar">
+  </div>
+
+  <div class="container middle-container">
+    <div class="row" id="charRow">
+    </div>
+  </div>
+
+  <div class="container search">
+    <h2 class='center-align'>Houses</h2>
+    <h5 class='center-align'>Search Houses By ID Number:</h5>
+    <input type="text" id="inputHouse">
+  </div>
+
+  <div class="container middle-container">
+    <div class="row" id="houseRow">
+    </div>
+  </div>
+
+  <footer class="page-footer blue-grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+        <h6 class="white-text">Game of Thrones</h6>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
